@@ -1,0 +1,29 @@
+<!-- pages/user/user.wxml -->
+<view class="user">
+  <view class="user-header">
+    <open-data type="userAvatarUrl" class="avatar" />
+    <open-data type="userNickName" class="nickname" />
+  </view>
+  <view class="user-body">
+    <view class="item">
+      <image src="../../images/youhui.png" />
+      <text>我的优惠</text>
+    </view>
+    <view class="item">
+      <image src="../../images/phone.png" />
+      <text>153****5678</text>
+    </view>
+    <view class="item">
+      <image src="../../images/pingtai.png" />
+      <text>平台须知</text>
+    </view>
+    <view class="item">
+      <image src="../../images/money.png" />
+      <text>CoCo钱包</text>
+    </view>
+    <view class="item">
+      <image src="../../images/address.png" />
+      <text>我的收获地址</text>
+    </view>
+  </view>
+</view>

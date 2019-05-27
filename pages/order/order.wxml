@@ -1,0 +1,7 @@
+<!-- pages/order/order.wxml -->
+<view class="order">
+  <view class="orderMsg">
+    <text>暂无订单信息</text>
+  </view>
+  <button class="orderBtn" bindtap="golist">开始点单</button>
+</view>

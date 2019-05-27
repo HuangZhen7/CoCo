@@ -1,0 +1,6 @@
+<!--pages/address/address.wxml-->
+   <view class="search">
+        <input placeholder='搜索' placeholder-style='color:#97a7b7;font-size:28rpx' type='text' class='searchBtn' bindinput='bindSearch'>
+        <!-- <image class="searchImg" src="../../images/search.png"></image> -->
+        </input>
+    </view>
