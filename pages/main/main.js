@@ -13,6 +13,7 @@ Page({
     duration: 500
   },
   golist() {
+<<<<<<< HEAD
     wx.showToast({
       title: '加载中…',
       icon: 'loading',
@@ -20,6 +21,10 @@ Page({
     })
     wx.navigateTo({
       url: '../address/address'
+=======
+    wx.navigateTo({
+      url: '../list/list'
+>>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
     })
   },
   /**

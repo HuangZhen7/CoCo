@@ -31,15 +31,19 @@
 			"current": -1,
 			"list": []
 		},
+<<<<<<< HEAD
 		"plugin": {
 			"current": -1,
 			"list": []
 		},
+=======
+>>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
+<<<<<<< HEAD
 			"current": 8,
 			"list": [
 				{
@@ -106,6 +110,10 @@
 					"scene": null
 				}
 			]
+=======
+			"current": -1,
+			"list": []
+>>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
 		}
 	}
 }

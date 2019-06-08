@@ -4,11 +4,16 @@
     <open-data type="userAvatarUrl" class="avatar" />
     <open-data type="userNickName" class="nickname" />
   </view>
+<<<<<<< HEAD
   <view class="user-body" bindtap="goDetail" data-name="优惠券">
+=======
+  <view class="user-body">
+>>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
     <view class="item">
       <image src="../../images/youhui.png" />
       <text>我的优惠</text>
     </view>
+<<<<<<< HEAD
     <view class="item" bindtap="goDetail" data-name="电话">
       <image src="../../images/phone.png" />
       <text>153****5678</text>
@@ -22,6 +27,21 @@
       <text>CoCo钱包</text>
     </view>
     <view class="item" bindtap="goDetail" data-name="收货地址">
+=======
+    <view class="item">
+      <image src="../../images/phone.png" />
+      <text>153****5678</text>
+    </view>
+    <view class="item">
+      <image src="../../images/pingtai.png" />
+      <text>平台须知</text>
+    </view>
+    <view class="item">
+      <image src="../../images/money.png" />
+      <text>CoCo钱包</text>
+    </view>
+    <view class="item">
+>>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
       <image src="../../images/address.png" />
       <text>我的收获地址</text>
     </view>

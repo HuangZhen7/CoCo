@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <view bindtap="nearby_search" class="nearby">
   <van-search value="{{ value }}" disabled="true" placeholder="{{address}}" />
 </view>
@@ -22,3 +23,11 @@
     </view>
   </van-tab>
 </van-tabs>
+=======
+<!--pages/address/address.wxml-->
+   <view class="search">
+        <input placeholder='搜索' placeholder-style='color:#97a7b7;font-size:28rpx' type='text' class='searchBtn' bindinput='bindSearch'>
+        <!-- <image class="searchImg" src="../../images/search.png"></image> -->
+        </input>
+    </view>
+>>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900

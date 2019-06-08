@@ -18,6 +18,7 @@ Page({
     temIndex: 0,
     more: ['常规', '珍珠', '西米露', '椰果'],
     tem: ['常规冰', '多冰', '少冰', '去冰', '温', '热'],
+<<<<<<< HEAD
     sugar: ['常规糖', '无糖', '微糖', '半糖', '多糖'],
     cartList: [],
     loading: false,
@@ -25,6 +26,9 @@ Page({
     sumMonney: 0,
     cupNumber: 0,
 
+=======
+    sugar: ['常规糖', '无糖', '微糖', '半糖', '多糖']
+>>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
   },
   selectMenu(e) {
     console.log(e);
@@ -64,15 +68,21 @@ Page({
   },
   selectInfo (e) {
     console.log(e);
+<<<<<<< HEAD
     let index = e.currentTarget.dataset.index;
     let type = e.currentTarget.dataset.type;
     // let id = e.currentTarget.id;
+=======
+    var index = e.currentTarget.dataset.index;
+    var type = e.currentTarget.dataset.type;
+>>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
     this.setData({
       showModal: !this.data.showModal,
       currentIndex: index,
       currentType: type,
       moreIndex: 0,
       temIndex: 0,
+<<<<<<< HEAD
       sugarIndex: 0,
       id: e.currentTarget.id
     });
@@ -85,21 +95,40 @@ Page({
     // console.log(type)
     if(type == 0) {
       // console.log('---------')
+=======
+      sugarIndex: 0
+    });
+  },
+  choose(e) {
+    console.log(e)
+    var index = e.currentTarget.dataset.index;
+    var type = e.currentTarget.dataset.type;
+    if(type === 0) {
+>>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
       this.setData({
         moreIndex: index
       })
     }
+<<<<<<< HEAD
     if(type == 1) {
+=======
+    if(type === 1) {
+>>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
       this.setData({
         temIndex: index
       })
     }
+<<<<<<< HEAD
     if(type == 2) {
+=======
+    if(type === 2) {
+>>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
       this.setData({
         sugarIndex: index
       })
     }
   },
+<<<<<<< HEAD
   showCartList(){
     if (this.data.cartList.length != 0) {
       this.setData({
@@ -179,6 +208,10 @@ Page({
         url: '../../pages/orderDetail/orderDetail'
       })
     }
+=======
+  addToCart() {
+    
+>>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
   },
   /**
    * 生命周期函数--监听页面加载
@@ -217,7 +250,10 @@ Page({
         console.log(res);
         that.setData({
           listData: res.data,
+<<<<<<< HEAD
           loading: true
+=======
+>>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
         })
         let heightArr = [];
         let h = 0;

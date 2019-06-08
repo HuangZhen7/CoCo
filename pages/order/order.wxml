@@ -1,5 +1,6 @@
 <!-- pages/order/order.wxml -->
 <view class="order">
+<<<<<<< HEAD
   <view class="orderMsg" hidden='{{flag}}'> 
     <text> 暂无订单信息</text>
   </view>
@@ -15,5 +16,10 @@
     </view>
   </view>
   
+=======
+  <view class="orderMsg">
+    <text>暂无订单信息</text>
+  </view>
+>>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
   <button class="orderBtn" bindtap="golist">开始点单</button>
 </view>

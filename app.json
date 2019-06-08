@@ -1,5 +1,6 @@
 {
   "pages": [
+<<<<<<< HEAD
     "pages/main/main",
     "pages/list/list",
     "pages/user/user",
@@ -15,6 +16,21 @@
     "navigationBarBackgroundColor": "#ec8319",
     "navigationBarTitleText": "CoCo都可",
     "navigationBarTextStyle": "white",
+=======
+    "pages/list/list",
+
+    "pages/main/main",
+    "pages/user/user",
+    "pages/order/order",
+    "pages/address/address"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "CoCo都可",
+    "navigationBarTextStyle": "black",
+>>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
     "backgroundColor": "black",
     "enablePullDownRefresh": false
   },
