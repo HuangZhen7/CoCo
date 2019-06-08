@@ -1,0 +1,168 @@
+/* pages/orderDetail/orderDetail.wxss */
+page{
+  height: 100%;
+  background-color: #ece7e7;
+}
+.main{
+  margin: 12px 16px 0 16px;
+}
+.header{
+  border: 1px solid #b8b3b3;
+  border-radius: 6px;
+  /* padding: 10px; */
+  background-color: #fff;
+  font-size: 14px;
+}
+.header-box{
+  margin: 10px 18px;
+}
+.hd1{
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header-hd1{
+  border-bottom: 1px solid #c0b9b9;
+  /* transform: scaleY(.5); */
+}
+
+.timeR{
+  font-size: 14px;
+  color: #fc9528;
+}
+.addressL{
+  margin-right: 18px;
+}
+.addressCtx{
+  font-size: 11px;
+  flex: 1;
+  color: #a09393;
+}
+
+.body{
+  font-size: 16px;
+  margin-top: 15px;
+  /* margin-bottom: 5px; */
+  padding: 10px;
+}
+.list{
+  border: 1px solid #b8b3b3;
+  border-radius: 6px;
+  /* padding: 10px; */
+  background-color: #fff;
+  font-size: 14px;
+}
+.bd-box{
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.name{
+  font-size: 15px;
+  margin-bottom: 6px;
+  
+}
+.detail{
+ font-size: 12px;
+  color: #a79c9c;
+}
+.price, .bd-right{
+  font-size: 16px
+}
+.youhui{
+  border: 1px solid #b8b3b3;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 12px;
+  margin-top: 20px; 
+}
+.youhui-box{
+  /* display: inline-flex; */
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.youhuiR{
+  display: inline-flex;
+  justify-content: center;
+}
+.youhuiR text{
+  font-size: 14px;
+  color: #fc9528;
+}
+.arrowR{
+ margin-left: 6px;
+}
+.remark{
+  border: 1px solid #b8b3b3;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.limited{
+  float: right;
+  margin-top: 4px;
+}
+.activity-color-bg{
+  background:#FF9C35;
+}
+.operate-bar{
+  position: absolute;
+  bottom: 0px;
+  height:55px;
+  width:100%;
+  display: flex;
+}
+.gouwuche{
+  width:75%;
+  background:#fff;
+  height: 100%; 
+  border-top: 1px solid #b8b3b3;
+}
+.gouwuche-icon{
+  width: 35px;
+  height: 35px;
+  font-size:40px;
+  color:#87888E;
+  margin-left:10px;
+  position: relative;
+}
+.cartIcon{
+  width: 35px;
+  height: 35px;
+}
+.number-msg{
+  padding: 1px 7px;
+  border-radius:50%;
+  background:#FF9C35;
+  color:#fff;
+  font-size:12px;
+  position: absolute;
+  text-align: center;
+  top:0px;
+  right:-5px;
+}
+
+.gouwuche-price{
+  color:#A9A9A9;
+  display:flex;
+  align-items: center;
+  margin-left:24px;
+  font-size:15px;
+  margin-bottom: -6px;
+}
+.submit-btn{
+  height:100%;
+  background:#cbcccf;
+  color: #fff;
+  width:25%;
+  display:flex;
+}
+.submit-btn-label{
+  font-size:15px;
+  margin:auto;
+}
+.activity-color-bg{
+  background:#FF9C35;
+}

@@ -1,0 +1,24 @@
+<view bindtap="nearby_search" class="nearby">
+  <van-search value="{{ value }}" disabled="true" placeholder="{{address}}" />
+</view>
+
+<van-tabs bind:click="onClick">
+  <!-- 附近门店 -->
+  <van-tab title="定位附近的门店">
+    <v-list stores="{{storeList}}"></v-list>
+  </van-tab>
+  <!-- 收藏门店 -->
+  <van-tab title="收藏的门店">
+    <view hidden="{{newStoreList.length == 0 ? true:false}}">
+      <v-list stores="{{newStoreList}}"></v-list>
+    </view>
+    <view class="main" hidden="{{newStoreList.length == 0 ? false:true}}">
+      <view class='main-box'>
+        <view class="star">
+          <van-icon name="star" color="#c5c1c1" size='50px' />
+        </view>
+        <view class="main-li">暂无收藏的门店</view>
+      </view>
+    </view>
+  </van-tab>
+</van-tabs>

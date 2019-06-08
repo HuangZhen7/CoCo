@@ -1,0 +1,20 @@
+/* pages/storeDetail/storeDetail.wxss */
+page{
+  background-color: #f7f4f4;
+}
+.main{
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+image{
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin-left: 50px;
+}
+.text{
+  font-size: 18px;
+}

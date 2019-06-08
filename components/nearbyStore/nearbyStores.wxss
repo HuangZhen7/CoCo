@@ -1,0 +1,71 @@
+/* components/nearbyStores.wxss */
+.storeList{
+  width: 100%;
+}
+.store{
+  border: 1px solid rgb(190, 185, 185);
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 0 10px 10px 10px;
+  /* margin-bottom: 10px; */
+  font-size: 15px;
+}
+.store .on{
+  color: #ec8319
+}
+.on1 {
+  color: #c5bfb7;
+}
+.store-container{
+  padding: 14px 20px;
+  position: relative;
+}
+.storeName{
+  display: inline-block;
+}
+.distance{
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+}
+.detail{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 10px 0;
+}
+.storeDetail{
+  color: #ec8319;
+  display: inline-flex;
+  position: absolute;
+  right: 20px;
+}
+.daodian{
+  margin: 10px 0;
+}
+.method{
+  box-sizing: border-box;
+  margin: 10px 0;
+  position: relative;
+}
+.shoucang{
+  display: inline-block;
+  right: 0;
+  position: absolute;
+  bottom: 10px;
+}
+.button{
+  color: #fff;
+  background-color: #ec8319;
+  margin-top: 20px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+.footer{
+  margin: 20px auto;
+  position: relative;
+  font-size: 16px;
+  color: #c7c3be;
+  left: 40%;
+}

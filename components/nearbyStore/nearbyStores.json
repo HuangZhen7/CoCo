@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-radio": "/dist/radio/index",
+    "van-radio-group": "/dist/radio-group/index",
+    "van-icon": "/dist/icon/index",
+    "van-button": "/dist/button/index",
+    "van-popup": "/dist/popup/index",
+    "van-datetime-picker": "/dist/datetime-picker/index"
+  }
+}

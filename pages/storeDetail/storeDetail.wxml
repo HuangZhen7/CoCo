@@ -1,0 +1,6 @@
+<!--pages/storeDetail/storeDetail.wxml-->
+<view class='main'>
+  <image src='../../images/12.png'></image>
+  <text class='text'>暂无门店信息,请谅解！</text>
+</view>
+

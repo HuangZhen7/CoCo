@@ -1,0 +1,91 @@
+<!-- pages/orderDetail/orderDetail.wxml -->
+<view class="main">
+  <view class="header">
+    <view class="header-box">
+      <view class="hd1 header-hd1">
+        <view class="timeL">取单时间</view>
+        <!-- <view class="timeR">现在下单,稍后即取</view> -->
+        <view class="timeR">{{time}}
+          <van-icon name="arrow-down" bind:click="orderTime" color="#a19898" fize="25px"/>
+        </view>
+
+      </view>
+      <view class="hd1">
+        <view class="addressL">取单地址</view>
+        <view class="addressCtx">{{address}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 订单详情 -->
+  <view class="body">订单详情</view>
+  <view class="list" wx:for="{{cartList}}" wx:key="item.id">
+    <view class="header-box bd-box">
+      <view class="bd-left">
+        <view class="name">{{item.name}}</view>
+        <view class="detail">{{item.detail}}</view>
+      </view>
+      <view class="price">￥{{item.price}}.0</view>
+      <view class="bd-right">x{{item.number}}</view>
+    </view>
+  </view>
+
+  <!--  -->
+  <view class="youhui">
+    <view class="header-box youhui-box">
+      <van-icon name="coupon-o" color="#ff9019" size="35px"/>
+      <view class="youhuiR">
+        <text>没有可用的优惠券</text>
+        <van-icon name="arrow" color="#fc9528" size="20px" class="arrowR"/>
+      </view>
+    </view>
+  </view>
+  <!-- 备注 -->
+  <view class="body">备注</view>
+  <view class="remark">
+    <view class="header-box" style="overflow: hidden;font-size: 12px;color: #a09393;">
+     <!-- <textarea placeholder-class="place-holder" auto-height
+      placeholder="饮品中规格可参阅订单详情中的显示，若有其它要求，请说明。"
+       name="introduction" maxlength='30' bindinput='limit' value="{{text}}" style="font-size: 12px;"/> -->
+      <!-- 显示字数 -->
+      <!-- <view class="clear" style="color: #a09393; font-size: 12px; float: right;">
+        <text >{{current}}/{{max}}个字</text>
+      </view> -->
+      <textarea auto-height placeholder="饮品中规格可参阅订单详情中的显示"
+      placeholder-style="color: #a09393;font-size: 12px;"
+      name="remark" maxlength="{{max}}" value="{{text}}"
+      bindinput="limit" bindconfirm="content" adjust-position="true"
+      >
+      </textarea>
+      <view class="limited">{{current}}/{{max}}个字</view>
+    </view>
+  </view>
+</view>
+ <!-- 购物车 -->
+  <view class="operate-bar">
+    <view class='gouwuche'>
+      <view style='padding:5px;display:flex'>
+        <view class="gouwuche-icon">
+          <image src="../../images/cart.png" class="cartIcon"></image>
+          <span class="number-msg">{{cupNumber}}</span>
+        </view>
+        <view class='gouwuche-price' style='color:#000;font-size:18px;font-weight:bold;' wx:if="{{sumMonney!=0}}">
+          ¥ {{sumMoney}}.0
+        </view>
+      </view>
+    </view>
+    <view class="submit-btn activity-color-bg" bindtap='goPay'>
+      <view class="submit-btn-label">去结算 <van-icon name="arrow" color='#fff'/></view>
+    </view>
+  </view>
+
+<van-popup show="{{ show }}" position="bottom" overlay-style="opacity: 0.9; color: #fff;" bind:close="onClose">
+  <van-datetime-picker
+  type="time"
+  value="{{ currentDate }}"
+  min-hour="{{ minHour }}"
+  max-hour="{{ maxHour }}"
+  bind:cancel="onCancel" 
+  bind:confirm="onConfirm"
+  title="请选择预约取单时间"
+/>
+</van-popup>

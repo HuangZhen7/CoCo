@@ -1,0 +1,21 @@
+/* pages/address/address.wxss */
+page{
+  background-color: #f7f4f4;
+}
+.main{
+  background-color: #fff;
+  height: 200px;
+}
+.main-box{
+  display: flex;
+  flex-flow: column wrap;
+  /* justify-content: space-around; */
+  align-items: center; 
+  padding-top: 50px; 
+}
+.star{
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  /* color: #a19898 */
+}

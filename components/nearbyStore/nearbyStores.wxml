@@ -1,0 +1,51 @@
+<!-- components/nearbyStores.wxml -->
+<view class="storeList">
+  <view class="store" wx:for="{{stores}}" wx:key="item.id" data-index="{{index}}" bindtap="selected">
+    <view class="store-container">
+      <van-icon class="dingwei" wx:if="{{curIndex == index}}" name="location-o" color="#ec8319" hidden="{{styleHidden}}" />
+      <view class="storeName {{curIndex == index ? 'on' : ''}}">{{item.storeName}}</view>
+      <view class="distance {{curIndex == index ? 'on' : 'on1'}}">{{item.distance}}</view>
+      <view class="detail {{curIndex == index ? '' : 'on1'}}">{{item.detail}}</view>
+      <!-- 隐藏部分 -->
+      <view wx:if="{{curIndex == index}}" data-id="{{id}}" class="daodian" hidden="{{styleHidden}}">
+        <text>到店自提：</text>
+        <view class="storeDetail" bindtap="storeDetail">
+          门店详情
+          <van-icon color="#ec8319" name="arrow" class='arrowR' />
+        </view>
+        <view class="method">
+          <van-radio-group value="{{ radio }}" bind:change="onChange">
+            <van-radio class="method1" checked-color="#ec8319" name="1">现在,支付成功后在店内取单</van-radio>
+            <van-radio class="method2" checked-color="#ec8319" name="2">稍后,预约稍晚时间到店取单</van-radio>
+          </van-radio-group>
+          <van-icon class='shoucang' wx:if="{{curIndex == index}}" id="{{index}}" 
+          name="{{flag == true ? 'star':'star-o'}}" color="#ec8319" bindtap="collect" />
+
+          <!-- <van-icon class='shoucang' id="{{index}}" 
+          name="{{flag == true ? 'star':'star-o'}}" color="#ec8319" bindtap="collect" /> -->
+
+          <!-- <view wx:if="{{curIndex == index}}"  bindtap="collect" hidden="{{flag }}">
+            <van-icon class='shoucang' hidden="{{!flag}}" id="{{index}}" name="star" color="#ec8319" />
+            <van-icon class='shoucang' hidden="{{flag }}" id="{{index}}" name="star-o" color="#ec8319"/>
+          </view> -->
+          
+        </view>
+        <button class="button" id="{{index}}" bindtap="goList">选择饮品</button>
+      </view>
+    </view>
+  </view>
+  <view class="footer">没有更多了</view>
+</view>
+
+<!-- 预约取单时间 底部弹框 -->
+<van-popup show="{{ show }}" position="bottom" overlay-style="opacity: 0.9; color: #fff;" bind:close="onClose">
+  <van-datetime-picker
+  type="time"
+  value="{{ currentDate }}"
+  min-hour="{{ minHour }}"
+  max-hour="{{ maxHour }}"
+  bind:cancel="onCancel" 
+  bind:confirm="onConfirm"
+  title="请选择预约取单时间"
+/>
+</van-popup>
