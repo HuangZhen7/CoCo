@@ -7,7 +7,6 @@ Page({
   data: {
 
   },
-<<<<<<< HEAD
   goDetail(e){
     // console.log(e)
     let name = e.currentTarget.dataset.name
@@ -20,9 +19,6 @@ Page({
       url: '../../pages/user-info/user-info?name=' + name,
     })
   },
-=======
-
->>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
   /**
    * 生命周期函数--监听页面加载
    */

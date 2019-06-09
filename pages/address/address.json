@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "usingComponents": {
     "van-search": "/dist/search/index",
     "van-tab": "/dist/tab/index",
@@ -7,7 +6,4 @@
     "van-icon": "/dist/icon/index",
     "v-list": "/components/nearbyStore/nearbyStores"
   }
-=======
-  "usingComponents": {}
->>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
 }

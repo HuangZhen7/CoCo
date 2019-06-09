@@ -73,6 +73,10 @@ Component({
       // console.log(e);
       let id = e.target.id
       // console.log(that.data.curIndex)
+      that.setData({
+        // curIndex: id,
+        flag: !that.data.flag
+      })
       let list = {
         "storeName": that.data.stores[id].storeName,
         "distance": that.data.stores[id].distance,
@@ -81,27 +85,21 @@ Component({
       }
       let stores = []
       if (that.data.flag == true) {
-        // stores.unshift(that.data.stores[id]);
         stores.unshift(list)
-        wx.setStorageSync('newStores', stores)
       } else {
-        // stores.shift(list)
-        wx.clearStorageSync('newStores')
-        // wx.setStorageSync('newStores', stores)
+        stores.shift(list)
       }
+      // wx.setStorageSync('newStores', stores)
       console.log(stores)
-      if(that.data.curIndex == id) {
-        that.setData({
-          // curIndex: id,
-          flag: !that.data.flag
-        })
-        wx.setStorageSync('newStores', stores)
+      if(stores.length == 0) {
+        wx.removeStorage({
+          key: 'newStores',
+          success: function(res) {console.log(res)},
+        }) 
       } else {
-        that.setData({
-          flag: false
-        })
-        wx.clearStorageSync('newStores')
+        wx.setStorageSync('newStores', stores)
       }
+      console.log(wx.getStorageSync('newStores'))
     },
     goList(e) {
       console.log(e)

@@ -1,12 +1,9 @@
 /* pages/list/list.wxss */
-<<<<<<< HEAD
 .on {
   color: #ffa600;
   border-color: #ffa600;
   background-color: #ffa600;
 }
-=======
->>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
 page, .main {
   height: 100%;
   background-color: #ece7e7;
@@ -22,10 +19,7 @@ page, .main {
   /* background-color: #aaaaaa; */
 }
 .list-left {
-<<<<<<< HEAD
 
-=======
->>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
   float: left;
   width: 150rpx;
   height: 100%;
@@ -35,28 +29,17 @@ page, .main {
   background-color: #fff;
   height: 120rpx;
   line-height: 120rpx;
-<<<<<<< HEAD
   /* width: 20px; */
-=======
->>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
   text-align: center;
   font-size: 25rpx;
   border-left: 3px solid #fff;
   margin-bottom: 1px;
 }
-<<<<<<< HEAD
 /* .list-left .list-menu .on {
   color: #ffa600;
   border-color: #ffa600;
   background-color: #ece7e7;
 } */
-=======
-.list-left .list-menu.on {
-  color: #ffa600;
-  border-color: #ffa600;
-  background-color: #ece7e7;
-}
->>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
 /* 右边 */
 .list-right {
   float: right;
@@ -186,7 +169,6 @@ page, .main {
   background:#FF9C35;
   color:white;
   margin-right:20px;
-<<<<<<< HEAD
 }
 
 /* 购物车 */
@@ -302,6 +284,4 @@ page, .main {
 }
 .cart-scroll-list{
   height:450rpx;
-=======
->>>>>>> 164b07c5bdd3bcfa22ed16eacc7f4b5643b3e900
 }
