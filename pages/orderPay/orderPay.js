@@ -51,7 +51,14 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    // wx.removeStorageSync('remark')
+    wx.removeStorage({
+      key: 'remark',
+      success: function(res) {},
+    })
+    wx.reLaunch({
+      url: '../order/order?itemList=' + JSON.stringify(this.data.cartList),
+    })
   },
 
   /**

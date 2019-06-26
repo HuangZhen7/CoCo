@@ -18,17 +18,9 @@
             <van-radio class="method1" checked-color="#ec8319" name="1">现在,支付成功后在店内取单</van-radio>
             <van-radio class="method2" checked-color="#ec8319" name="2">稍后,预约稍晚时间到店取单</van-radio>
           </van-radio-group>
+          <!-- 收藏 -->
           <van-icon class='shoucang' wx:if="{{curIndex == index}}" id="{{index}}" 
-          name="{{flag == true ? 'star':'star-o'}}" color="#ec8319" bindtap="collect" />
-
-          <!-- <van-icon class='shoucang' id="{{index}}" 
-          name="{{flag == true ? 'star':'star-o'}}" color="#ec8319" bindtap="collect" /> -->
-
-          <!-- <view wx:if="{{curIndex == index}}"  bindtap="collect" hidden="{{flag }}">
-            <van-icon class='shoucang' hidden="{{!flag}}" id="{{index}}" name="star" color="#ec8319" />
-            <van-icon class='shoucang' hidden="{{flag }}" id="{{index}}" name="star-o" color="#ec8319"/>
-          </view> -->
-          
+          name="{{flag == true ? 'star':'star-o'}}" color="#ec8319" bindtap="collect" />          
         </view>
         <button class="button" id="{{index}}" bindtap="goList">选择饮品</button>
       </view>

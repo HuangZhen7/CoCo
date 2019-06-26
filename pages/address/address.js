@@ -37,7 +37,7 @@ Page({
     let that = this;
     wx.chooseLocation({
       success: function(res) {
-        console.log(res);
+        // console.log(res);
         var newAddress = res.address
         console.log(newAddress);
         that.setData({
@@ -50,7 +50,7 @@ Page({
     this.setData({
       newStoreList: wx.getStorageSync('newStores')
     })
-    console.log(this.data.newStoreList.length)
+    // console.log(this.data.newStoreList.length)
   },
   onShow() {
 
@@ -85,7 +85,7 @@ Page({
     // })
     wx.getSetting({
       success(res) {
-        console.log('get-setting', res.authSetting);
+        // console.log('get-setting', res.authSetting);
         // 只返回用户请求过的授权
         let auth = res.authSetting;
         if (auth['scope.userLocation']) {
@@ -133,7 +133,7 @@ Page({
               if (res.confirm) {
                 wx.openSetting({
                   success(res) {
-                    console.log('open-setting-suc', res.authSetting);
+                    // console.log('open-setting-suc', res.authSetting);
                     let setting = res.authSetting;
                     if (!setting['scope.userLocation']) {
                       wx.showToast({

@@ -1,19 +1,21 @@
 <!-- pages/order/order.wxml -->
 <view class="order">
-  <view class="orderMsg" hidden='{{flag}}'> 
-    <text> 暂无订单信息</text>
-  </view>
-  <!-- 有订单 -->
-  <view hidden='{{!flag}}' class="list orderMsg" wx:for="{{cartList}}" wx:key="item.id">
-    <view class="header-box bd-box">
-      <view class="bd-left">
-        <view class="name">{{item.name}}</view>
-        <view class="detail">{{item.detail}}</view>
+  <view class="orderMsg">
+    <!-- <text hidden='{{flag}}'> 暂无订单信息</text> -->
+    <text wx:if="{{!flag}}"> 暂无订单信息</text>
+    <!-- 有订单 -->
+    <view wx:if='{{flag}}' class="list" wx:for="{{cartList}}" wx:key="item.id">
+      <view class="header-box bd-box">
+        <view class="bd-left">
+          <view class="name">{{item.name}}</view>
+          <view class="detail">{{item.detail}}</view>
+        </view>
+        <view class="price">￥{{item.price}}.0</view>
+        <view class="bd-right">x{{item.number}}</view>
       </view>
-      <view class="price">￥{{item.price}}.0</view>
-      <view class="bd-right">x{{item.number}}</view>
     </view>
   </view>
-  
+
+
   <button class="orderBtn" bindtap="golist">开始点单</button>
 </view>

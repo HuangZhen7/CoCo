@@ -7,7 +7,8 @@ Page({
   data: {
     imgUrls: [
       '/images/h1.jpg',
-      '/images/h2.jpg'
+      '/images/h2.jpg',
+      '/images/h3.jpg'
     ],
     interval: 5000,
     duration: 500

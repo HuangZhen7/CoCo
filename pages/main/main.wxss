@@ -1,6 +1,6 @@
 /* pages/main/main.wxss */
 swiper {
-  height: 400rpx;
+  height: 420rpx;
 }
 swiper-item image {
   width: 100%;

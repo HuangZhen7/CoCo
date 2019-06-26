@@ -66,7 +66,7 @@ Page({
     console.log(e);
     let index = e.currentTarget.dataset.index;
     let type = e.currentTarget.dataset.type;
-    // let id = e.currentTarget.id;
+    let id = e.currentTarget.id;
     this.setData({
       showModal: !this.data.showModal,
       currentIndex: index,

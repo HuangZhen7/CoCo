@@ -99,12 +99,12 @@ Component({
       } else {
         wx.setStorageSync('newStores', stores)
       }
-      console.log(wx.getStorageSync('newStores'))
+      // console.log(wx.getStorageSync('newStores'))
     },
     goList(e) {
       console.log(e)
       let id = e.target.id
-      console.log(this.data.stores[id].detail)
+      // console.log(this.data.stores[id].detail)
       wx.setStorageSync('storeAdd',this.data.stores[id].detail)
       wx.showToast({
         title: '加载中…',

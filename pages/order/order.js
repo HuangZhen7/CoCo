@@ -25,24 +25,32 @@ Page({
     })
   },
   onLoad: function (options) {
+    // console.log(options)
     wx.setNavigationBarTitle({
       title: '我的订单'
     })
-    this.setData({
-      cartList: wx.getStorageSync('cartList'),
-      sumMoney: wx.getStorageSync('sumMoney'),
-      cupNumber: wx.getStorageSync('cupNumber')
-    })
-    console.log(this.data.cartList)
-    if(this.data.cartList.length != 0) {
+    if (options.itemList) {
       this.setData({
+        cartList: JSON.parse(options.itemList),
         flag: true
       })
-    } else {
-      this.setData({
-        flag: false
-      }) 
     }
+    
+    // console.log(cartList,'-------')
+    // this.setData({
+    //   cartList: wx.getStorageSync('cartList') || '',
+    //   sumMoney: wx.getStorageSync('sumMoney'),
+    //   cupNumber: wx.getStorageSync('cupNumber')
+    // })
+    // if(this.data.cartList.length != 0) {
+    //   this.setData({
+    //     flag: true
+    //   })
+    // } else {
+    //   this.setData({
+    //     flag: false
+    //   }) 
+    // }
   },
 
   /**
