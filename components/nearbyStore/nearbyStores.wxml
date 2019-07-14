@@ -20,7 +20,9 @@
           </van-radio-group>
           <!-- 收藏 -->
           <van-icon class='shoucang' wx:if="{{curIndex == index}}" id="{{index}}" 
-          name="{{flag == true ? 'star':'star-o'}}" color="#ec8319" bindtap="collect" />          
+          name="{{item.selected ? 'star':'star-o'}}" color="#ec8319" bindtap="collect" />
+          <!-- <van-icon class='shoucang' wx:if="{{curIndex == index}}" id="{{index}}" 
+          name="{{flag == true ? 'star':'star-o'}}" color="#ec8319" bindtap="collect" />           -->
         </view>
         <button class="button" id="{{index}}" bindtap="goList">选择饮品</button>
       </view>

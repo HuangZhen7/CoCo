@@ -18,6 +18,7 @@ Page({
   onClick(event) {
     console.log(event);
     let index = event.detail.index;
+    console.log('---------',this.data.storeList)
     if (index == 1 && this.data.newStoreList != null) {
       this.setData({
         flag: true
@@ -47,13 +48,11 @@ Page({
     })
   },
   onLoad(options) {
+    // let stores 
     this.setData({
-      newStoreList: wx.getStorageSync('newStores')
+      // newStoreList: wx.getStorageSync('newStores')
     })
     // console.log(this.data.newStoreList.length)
-  },
-  onShow() {
-
   },
 
   onReady() {

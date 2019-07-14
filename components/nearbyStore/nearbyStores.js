@@ -70,35 +70,40 @@ Component({
     },
     collect(e) {
       let that = this;
-      // console.log(e);
+      console.log(e);
       let id = e.target.id
-      // console.log(that.data.curIndex)
+      let stores = this.data.stores
+      stores[id].selected = !stores[id].selected
       that.setData({
-        // curIndex: id,
-        flag: !that.data.flag
+        stores: stores
       })
-      let list = {
-        "storeName": that.data.stores[id].storeName,
-        "distance": that.data.stores[id].distance,
-        "detail": that.data.stores[id].detail,
-        "flag": that.data.flag
-      }
-      let stores = []
-      if (that.data.flag == true) {
-        stores.unshift(list)
-      } else {
-        stores.shift(list)
-      }
-      // wx.setStorageSync('newStores', stores)
-      console.log(stores)
-      if(stores.length == 0) {
-        wx.removeStorage({
-          key: 'newStores',
-          success: function(res) {console.log(res)},
-        }) 
-      } else {
-        wx.setStorageSync('newStores', stores)
-      }
+      console.log('修改后',this.data.stores)
+      // that.setData({
+      //   // curIndex: id,
+      //   flag: !that.data.flag
+      // })
+      // let list = {
+      //   "storeName": that.data.stores[id].storeName,
+      //   "distance": that.data.stores[id].distance,
+      //   "detail": that.data.stores[id].detail,
+      //   "flag": that.data.flag
+      // }
+      // let stores = []
+      // if (that.data.flag == true) {
+      //   stores.unshift(list)
+      // } else {
+      //   stores.shift(list)
+      // }
+      // // wx.setStorageSync('newStores', stores)
+      // console.log(stores)
+      // if(stores.length == 0) {
+      //   wx.removeStorage({
+      //     key: 'newStores',
+      //     success: function(res) {console.log(res)},
+      //   }) 
+      // } else {
+      //   wx.setStorageSync('newStores', stores)
+      // }
       // console.log(wx.getStorageSync('newStores'))
     },
     goList(e) {
